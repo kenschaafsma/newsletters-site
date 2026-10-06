@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DuPage Family Happenings | Free Weekly Family Events in DuPage County, IL</title>
+<meta name="description" content="Free weekly email of family events, activities, and local deals in Elmhurst, Lombard, Glen Ellyn, Villa Park, and Oak Brook, DuPage County, IL. Sent every Wednesday.">
+<link rel="canonical" href="https://newsletters.theownersaide.com/">
+<link rel="icon" href="data:,">
+<meta name="theme-color" content="#E85D0C">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DuPage Family Happenings">
+<meta property="og:title" content="DuPage Family Happenings: free family events, every week">
+<meta property="og:description" content="Free weekly email of family events, activities, and local deals in Elmhurst, Lombard, Glen Ellyn, Villa Park, and Oak Brook, DuPage County, IL. Sent every Wednesday.">
+<meta property="og:url" content="https://newsletters.theownersaide.com/">
+<meta property="og:image" content="https://newsletters.theownersaide.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="DuPage Family Happenings: free family events every week for Elmhurst, Lombard, Glen Ellyn, Villa Park, and Oak Brook">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DuPage Family Happenings: free family events, every week">
+<meta name="twitter:description" content="Free weekly email of family events, activities, and local deals in Elmhurst, Lombard, Glen Ellyn, Villa Park, and Oak Brook, DuPage County, IL. Sent every Wednesday.">
+<meta name="twitter:image" content="https://newsletters.theownersaide.com/og-image.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --orange:#E85D0C;
+    --orange-dark:#C44A05;
+    --orange-soft:#FDE3CF;
+    --cream:#FFF6EB;
+    --cream-2:#FFEEDB;
+    --ink:#2A1F17;
+    --ink-soft:#5B4A3E;
+    --line:#EAD9C6;
+    --green:#2F6B4F;
+    --green-soft:#E3F0E8;
+    --sun:#F6B23C;
+    --white:#FFFFFF;
+    --radius:18px;
+    --shadow:0 10px 30px rgba(110,60,20,.10), 0 2px 6px rgba(110,60,20,.06);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;
+    font-family:"Nunito Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    font-size:18px;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--orange-dark)}
+  img{max-width:100%;display:block}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-family:"Fraunces",Georgia,"Times New Roman",serif;line-height:1.15;margin:0 0 .5em;color:var(--ink)}
+  h1{font-size:clamp(2.3rem,5.6vw,3.9rem);letter-spacing:-.01em}
+  h2{font-size:clamp(1.8rem,3.6vw,2.6rem)}
+  h3{font-size:1.25rem}
+  p{margin:0 0 1em}
+  .eyebrow{display:inline-block;font-weight:800;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-dark);margin-bottom:.8rem}
+  .skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:8px 12px;z-index:10}
+  .skip:focus{left:8px}
+
+  /* Buttons */
+  .btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+    font-family:inherit;font-weight:800;font-size:1.05rem;text-decoration:none;
+    padding:.95em 1.6em;border-radius:999px;border:2px solid transparent;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    cursor:pointer;line-height:1.1;text-align:center;white-space:nowrap
+  }
+  .btn:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+  .btn-primary{background:var(--orange);color:#fff;box-shadow:0 6px 16px rgba(232,93,12,.35)}
+  .btn-primary:hover{background:var(--orange-dark);transform:translateY(-1px)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+  .btn-ghost:hover{background:var(--ink);color:#fff}
+  .btn-white{background:#fff;color:var(--orange-dark)}
+  .btn-white:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(0,0,0,.15)}
+  .btn-sm{padding:.65em 1.15em;font-size:.95rem}
+
+  /* Top bar */
+  .topbar{background:var(--orange);color:#fff}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+  .brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:1.25rem;line-height:1.1}
+  .brand-mark{width:40px;height:40px;flex:none}
+  .brand small{display:block;font-family:"Nunito Sans",sans-serif;font-weight:600;font-size:.72rem;letter-spacing:.04em;opacity:.92}
+
+  /* Hero */
+  .hero{background:var(--orange);color:#fff;position:relative;overflow:hidden;padding:46px 0 120px}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:80px;background:var(--cream);clip-path:ellipse(75% 100% at 50% 100%)}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative;z-index:1}
+  .hero h1{color:#fff}
+  .hero .lede{font-size:1.2rem;max-width:36em;color:#FFF4EA}
+  .hero .eyebrow{color:#FFE2C7}
+  .towns{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 26px;padding:0;list-style:none}
+  .towns li{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;font-weight:700;font-size:.95rem}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+  .hero .btn-ghost{color:#fff;border-color:rgba(255,255,255,.8)}
+  .hero .btn-ghost:hover{background:#fff;color:var(--orange-dark)}
+  .fineprint{font-size:.92rem;margin-top:14px;color:#FFE7D3}
+
+  .calendar-card{
+    background:#fff;color:var(--ink);border-radius:22px;box-shadow:0 20px 50px rgba(80,30,0,.28);
+    padding:22px 22px 18px;transform:rotate(1.2deg);max-width:420px;margin-left:auto
+  }
+  .cal-head{display:flex;justify-content:space-between;align-items:center;border-bottom:2px dashed var(--line);padding-bottom:12px;margin-bottom:14px}
+  .cal-head strong{font-family:"Fraunces",Georgia,serif;font-size:1.15rem}
+  .cal-pill{background:var(--orange-soft);color:var(--orange-dark);font-weight:800;font-size:.78rem;padding:4px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.06em}
+  .cal-week{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;text-align:center;margin-bottom:16px}
+  .cal-week span{font-size:.72rem;font-weight:800;color:var(--ink-soft);text-transform:uppercase}
+  .cal-week b{display:block;font-size:.95rem;padding:7px 0;border-radius:10px;background:var(--cream)}
+  .cal-week .in b{background:var(--orange-soft);color:var(--orange-dark)}
+  .cal-week .send b{background:var(--orange);color:#fff}
+  .cal-week .wknd b{background:var(--sun);color:var(--ink)}
+  .cal-list{list-style:none;margin:0;padding:0}
+  .cal-list li{display:flex;gap:12px;align-items:flex-start;padding:9px 0;border-top:1px solid #F3E7DA;font-size:.95rem;line-height:1.4}
+  .cal-list li:first-child{border-top:0}
+  .dot{width:12px;height:12px;border-radius:50%;margin-top:5px;flex:none}
+  .cal-note{font-size:.82rem;color:var(--ink-soft);margin:10px 0 0}
+
+  /* Sections */
+  section{padding:72px 0}
+  .center{text-align:center}
+  .intro{max-width:40em;margin:0 auto 40px;color:var(--ink-soft);font-size:1.1rem}
+
+  .features{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .feature{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow)}
+  .feature .icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:14px}
+  .feature p{color:var(--ink-soft);font-size:1rem;margin:0}
+
+  .how{background:var(--cream-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:step}
+  .step{position:relative;padding-left:64px}
+  .step::before{counter-increment:step;content:counter(step);position:absolute;left:0;top:0;width:46px;height:46px;border-radius:50%;background:var(--orange);color:#fff;font-weight:800;font-size:1.2rem;display:grid;place-items:center;font-family:"Fraunces",Georgia,serif}
+  .step p{color:var(--ink-soft);font-size:1rem;margin:0}
+
+  /* Sample issue */
+  .sample-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:28px}
+  .sample-head p{color:var(--ink-soft);margin:0;max-width:34em}
+  .email{
+    max-width:760px;margin:0 auto;background:#fff;border-radius:16px;overflow:hidden;
+    box-shadow:0 24px 60px rgba(110,60,20,.16), 0 2px 8px rgba(110,60,20,.08);border:1px solid var(--line)
+  }
+  .email-chrome{background:#F4ECE3;padding:12px 18px;display:flex;align-items:center;gap:8px;border-bottom:1px solid var(--line)}
+  .email-chrome i{width:11px;height:11px;border-radius:50%;display:inline-block;background:#E4CDB6}
+  .email-chrome i:nth-child(1){background:#F28B6B}.email-chrome i:nth-child(2){background:#F6C454}.email-chrome i:nth-child(3){background:#8CC79E}
+  .email-chrome span{margin-left:10px;font-size:.82rem;color:var(--ink-soft);font-weight:700}
+  .email-meta{padding:16px 26px;border-bottom:1px solid #F1E5D8;font-size:.95rem;line-height:1.5}
+  .email-meta div{display:flex;gap:10px}
+  .email-meta dt,.email-meta .k{color:var(--ink-soft);width:66px;flex:none}
+  .email-banner{background:var(--orange);color:#fff;text-align:center;padding:26px 22px 22px}
+  .email-banner .sample-tag{display:inline-block;background:#fff;color:var(--orange-dark);font-weight:800;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:12px}
+  .email-banner h3{color:#fff;font-size:1.65rem;margin:0 0 4px}
+  .email-banner p{margin:0;color:#FFE9D8;font-size:.98rem}
+  .email-body{padding:26px 30px 10px;font-size:1rem;line-height:1.55}
+  .email-body h4{font-family:"Fraunces",Georgia,serif;font-size:1.2rem;margin:26px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--orange-soft)}
+  .picks h4{margin-top:0}
+  .email-body ul,.email-body ol{margin:0 0 6px;padding-left:1.2em}
+  .email-body li{margin:0 0 10px}
+  .email-body li a{font-weight:700;white-space:nowrap}
+  .email-body .when{color:var(--ink-soft);font-weight:700}
+  .free{display:inline-block;background:var(--green-soft);color:var(--green);font-weight:800;font-size:.75rem;padding:1px 8px;border-radius:999px;vertical-align:1px;letter-spacing:.03em}
+  .town-tag{color:var(--orange-dark);font-weight:700}
+  .picks{background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:16px 18px 6px 18px}
+  .picks ol{padding-left:1.3em}
+  .towns-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 28px}
+  .towns-grid h5{font-size:1rem;margin:14px 0 6px;color:var(--ink)}
+  .sponsor-slot{border:2px dashed #E8C9A9;border-radius:12px;padding:12px 16px;margin:22px 0 4px;background:#FFFBF6;font-size:.95rem;color:var(--ink-soft)}
+  .sponsor-slot b{color:var(--ink)}
+  .email-foot{background:#FBF5EE;border-top:1px solid #F1E5D8;padding:20px 30px;font-size:.85rem;color:var(--ink-soft);line-height:1.5}
+  .email-foot p{margin:0 0 6px}
+  .sample-cta{text-align:center;margin-top:30px}
+  .sample-cta p{color:var(--ink-soft);font-size:1rem;margin-top:10px}
+
+  /* Sponsors */
+  .biz{padding:20px 0 80px}
+  .biz-card{
+    background:var(--green);color:#fff;border-radius:26px;padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:36px;align-items:center;
+    box-shadow:var(--shadow);position:relative;overflow:hidden
+  }
+  .biz-card::before{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:rgba(255,255,255,.07)}
+  .biz-card h2{color:#fff}
+  .biz-card .eyebrow{color:#BFE3CE}
+  .biz-card p{color:#E7F3EC}
+  .biz-list{list-style:none;padding:0;margin:0 0 6px}
+  .biz-list li{padding-left:30px;position:relative;margin-bottom:8px;color:#F1F8F3}
+  .biz-list li::before{content:"";position:absolute;left:0;top:.35em;width:18px;height:18px;border-radius:50%;background:var(--sun) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5 10.5l3 3 7-7' fill='none' stroke='%232A1F17' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/12px no-repeat}
+  .price{background:#fff;color:var(--ink);border-radius:20px;padding:28px;text-align:center;position:relative;z-index:1}
+  .price .amt{font-family:"Fraunces",Georgia,serif;font-size:3.2rem;font-weight:700;color:var(--green);line-height:1}
+  .price .per{font-weight:700;color:var(--ink-soft);margin:6px 0 18px}
+  .price .btn{width:100%}
+  .price small{display:block;margin-top:12px;color:var(--ink-soft);font-size:.85rem}
+
+  /* Final CTA */
+  .final{background:var(--orange);color:#fff;text-align:center;padding:64px 0}
+  .final h2{color:#fff}
+  .final p{color:#FFE9D8;max-width:34em;margin:0 auto 24px}
+
+  footer{background:var(--ink);color:#E9DCCF;padding:40px 0;font-size:.95rem}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px}
+  footer a{color:#FFC89E}
+  footer p{margin:0 0 4px}
+  footer strong{color:#fff}
+
+  @media (max-width: 960px){
+    .features{grid-template-columns:repeat(2,1fr)}
+    .hero-grid{grid-template-columns:1fr;gap:36px}
+    .calendar-card{margin:0 auto;transform:none}
+    .biz-card{grid-template-columns:1fr;padding:34px 26px}
+  }
+  @media (max-width: 680px){
+    body{font-size:17px}
+    .topbar .btn-sm{padding:.55em .95em;font-size:.88rem}
+    .brand{font-size:1.05rem}
+    .brand small{display:none}
+    .hero{padding:34px 0 96px}
+    .hero .lede{font-size:1.08rem}
+    .cta-row .btn{width:100%}
+    section{padding:56px 0}
+    .features{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr;gap:22px}
+    .towns-grid{grid-template-columns:1fr}
+    .email-body{padding:20px 18px 6px}
+    .email-meta{padding:14px 18px}
+    .email-foot{padding:18px}
+    .email-body li a{white-space:normal}
+    .sample-cta .btn{width:100%}
+  }
+  @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="DuPage Family Happenings home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect x="3" y="7" width="34" height="30" rx="7" fill="#fff"/>
+        <rect x="3" y="7" width="34" height="9" rx="4" fill="#F6B23C"/>
+        <rect x="10" y="3" width="4" height="9" rx="2" fill="#2A1F17"/>
+        <rect x="26" y="3" width="4" height="9" rx="2" fill="#2A1F17"/>
+        <path d="M20 33s-8-4.6-8-10a4.3 4.3 0 0 1 8-2.2A4.3 4.3 0 0 1 28 23c0 5.4-8 10-8 10z" fill="#E85D0C"/>
+      </svg>
+      <span>DuPage Family Happenings<small>An Owner's Aide publication</small></span>
+    </a>
+    <a class="btn btn-white btn-sm" href="https://dupagefamilyhappenings.beehiiv.com">Subscribe free</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Free weekly email · DuPage County, IL</span>
+        <h1>Free family events, every week</h1>
+        <p class="lede">DuPage Family Happenings is a free weekly email of family events, activities, and local deals for five towns in DuPage County. It lands every Wednesday, covering Thursday through the following Wednesday, so you can plan your weekend before it starts.</p>
+        <ul class="towns" aria-label="Towns covered">
+          <li>Elmhurst</li><li>Lombard</li><li>Glen Ellyn</li><li>Villa Park</li><li>Oak Brook</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-white" href="https://dupagefamilyhappenings.beehiiv.com">Subscribe free</a>
+          <a class="btn btn-ghost" href="#sample">See a sample issue</a>
+        </div>
+        <p class="fineprint">Just your email address. It’s free, and you can unsubscribe anytime.</p>
+      </div>
+
+      <div class="calendar-card" aria-hidden="true">
+        <div class="cal-head"><strong>Your week, planned</strong><span class="cal-pill">Every Wed</span></div>
+        <div class="cal-week">
+          <div class="send"><span>Wed</span><b>✉</b></div>
+          <div class="in"><span>Thu</span><b>·</b></div>
+          <div class="wknd"><span>Fri</span><b>★</b></div>
+          <div class="wknd"><span>Sat</span><b>★</b></div>
+          <div class="wknd"><span>Sun</span><b>★</b></div>
+          <div class="in"><span>Mon</span><b>·</b></div>
+          <div class="in"><span>Tue</span><b>·</b></div>
+        </div>
+        <ul class="cal-list">
+          <li><span class="dot" style="background:#E85D0C"></span><span><b>Weekend picks</b> across all five towns</span></li>
+          <li><span class="dot" style="background:#2F6B4F"></span><span><b>Storytimes, festivals, and games</b> sorted by town</span></li>
+          <li><span class="dot" style="background:#F6B23C"></span><span><b>Free things to do</b> and family dining deals</span></li>
+        </ul>
+        <p class="cal-note">The email arrives Wednesday and covers Thursday through the next Wednesday.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="inside">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">What's inside</span>
+        <h2>One short email with the whole week in it</h2>
+        <p class="intro">No more digging through library calendars, park district pages, and village websites. We gather what's happening for kids and families nearby and put it in one easy read.</p>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <div class="icon" style="background:var(--orange-soft)">
+            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 16.8l-5.4 2.9 1-6.1L3.2 9.3l6.1-.9z" fill="#E85D0C"/></svg>
+          </div>
+          <h3>Top picks</h3>
+          <p>The best few family outings of the week, wherever they are in the five towns.</p>
+        </div>
+        <div class="feature">
+          <div class="icon" style="background:var(--green-soft)">
+            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="#2F6B4F"/></svg>
+          </div>
+          <h3>Town by town</h3>
+          <p>Events for Elmhurst, Lombard, Glen Ellyn, Villa Park, and Oak Brook, each in its own section.</p>
+        </div>
+        <div class="feature">
+          <div class="icon" style="background:#FFF0D2">
+            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 1 1 0-5C11 2 12 7 12 7zm0 0h4.5a2.5 2.5 0 1 0 0-5C13 2 12 7 12 7z" fill="none" stroke="#C98400" stroke-width="2" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Free all week</h3>
+          <p>Low-cost and no-cost things to do: scavenger hunts, museum days, and fall walks.</p>
+        </div>
+        <div class="feature">
+          <div class="icon" style="background:var(--orange-soft)">
+            <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8v10H3z" fill="none" stroke="#E85D0C" stroke-width="2" stroke-linejoin="round"/><path d="M9 21v-6h6v6" fill="none" stroke="#E85D0C" stroke-width="2"/></svg>
+          </div>
+          <h3>Local deals</h3>
+          <p>Kids-eat-free nights, family discounts, and shops and restaurants worth knowing about.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <div class="wrap">
+      <div class="center">
+        <span class="eyebrow">How it works</span>
+        <h2>Simple from the start</h2>
+        <p class="intro">Sign up once and the plans come to you.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><h3>Sign up free</h3><p>Enter your email on our signup page. That's all it takes.</p></div>
+        <div class="step"><h3>Open it Wednesday</h3><p>Every Wednesday you get events from Thursday through the following Wednesday.</p></div>
+        <div class="step"><h3>Plan your weekend</h3><p>Tap any listing for the organizer's page with times, places, and sign-up details.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sample">
+    <div class="wrap">
+      <div class="sample-head">
+        <div>
+          <span class="eyebrow">See a sample issue</span>
+          <h2>Here's what lands in your inbox</h2>
+        </div>
+        <p>A shortened look at a real issue. These dates have passed, but every Wednesday brings a fresh set of plans for the week ahead.</p>
+      </div>
+
+      <article class="email" aria-label="Sample issue: October 5 to 11, 2026">
+        <div class="email-chrome" aria-hidden="true"><i></i><i></i><i></i><span>Inbox</span></div>
+        <div class="email-meta">
+          <div><span class="k">From</span><span><b>DuPage Family Happenings</b></span></div>
+          <div><span class="k">Subject</span><span>OAKtoberfest, Autumn Jubilee, and a storybook walk</span></div>
+        </div>
+        <div class="email-banner">
+          <span class="sample-tag">Sample issue: Oct 5–11, 2026</span>
+          <h3>DuPage Family Happenings</h3>
+          <p>Elmhurst · Lombard · Glen Ellyn · Villa Park · Oak Brook</p>
+        </div>
+
+        <div class="email-body">
+          <p>Hi neighbors! 👋 Here are this week's kid-friendly events, free things to do, and family deals around Elmhurst, Lombard, Glen Ellyn, Villa Park, and Oak Brook, all in one place.</p>
+
+          <div class="sponsor-slot" style="margin:0 0 18px"><b>Sponsor spot:</b> Your local business could be featured here, near the top of the email, for four weekly issues.</div>
+
+          <div class="picks">
+            <h4>⭐ Top picks this week</h4>
+            <ol>
+              <li><b>OAKtoberfest at Lake Ellyn</b> <span class="town-tag">(Glen Ellyn)</span>: <span class="when">Sat, Oct 10, 3–7 p.m.</span> <span class="free">FREE</span> Live music, face painting, a StoryWalk®, and a tree treasure hunt. <a href="https://gepark.org/gepdevent/oaktoberfest/" target="_blank" rel="noopener">Details →</a></li>
+              <li><b>Autumn Jubilee on the Prairie Path</b> <span class="town-tag">(Villa Park)</span>: <span class="when">Sat, Oct 10, 11 a.m.–5 p.m.</span> at the Villa Park Historical Society. Food trucks, live bands, face painting, and crafts. <a href="https://www.invillapark.com/1299/Autumn-Jubilee" target="_blank" rel="noopener">Details →</a></li>
+              <li><b>Family Storybook Walk</b> <span class="town-tag">(Elmhurst)</span>: <span class="when">Sun, Oct 11, 9 a.m.</span> at Eldridge Park. <span class="free">FREE</span> Read <i>Wind Watchers</i> along a trail, do a nature scavenger hunt, then make a wind chime. <a href="https://www.epd.org/news/family-storybook-walk" target="_blank" rel="noopener">Details →</a></li>
+            </ol>
+          </div>
+
+          <h4>🏡 Around the towns</h4>
+          <div class="towns-grid">
+            <div>
+              <h5>Elmhurst</h5>
+              <ul>
+                <li><span class="when">Fri, Oct 9 · 10–11 a.m.</span> Celebrate Fall on the Patio: bubbles, chalk, and outdoor play at the library. Drop in. <a href="https://elmhurstpubliclibrary.libcal.com/event/16884668" target="_blank" rel="noopener">Details →</a></li>
+                <li><span class="when">All week</span> <i>Bear Down: Football in the Windy City</i> at the Elmhurst History Museum. <a href="https://www.elmhursthistory.org/exhibits/" target="_blank" rel="noopener">Details →</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5>Lombard</h5>
+              <ul>
+                <li><span class="when">Mon, Oct 5 &amp; Thu, Oct 8 · 5–5:30 p.m.</span> Evening Storytime in Lilacia Park, outdoors with Helen Plum Library. <a href="https://www.helenplum.org/event/evening-storytime-lilacia-park-121858" target="_blank" rel="noopener">Details →</a></li>
+                <li><span class="when">Sat, Oct 10 · 9:30–10 a.m.</span> Go Nuts for Donuts Storytime 🍩, with donuts for the kids. <a href="https://www.helenplum.org/event/go-nuts-donuts-storytime-117226" target="_blank" rel="noopener">Details →</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5>Glen Ellyn</h5>
+              <ul>
+                <li><span class="when">Fri, Oct 9 · 10–10:45 a.m.</span> Music. Movement. Spanish. Fun! For ages 2–6 and their grownups, no Spanish needed. Glen Ellyn Public Library. <a href="https://gepl.librarycalendar.com/event/music-movement-spanish-fun-39273" target="_blank" rel="noopener">Details →</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5>Villa Park</h5>
+              <ul>
+                <li><span class="when">Sat, Oct 10 · 9:30–11 a.m.</span> Fiber Arts Craft Circle for all ages. No registration. <a href="https://villapark.librarycalendar.com/event/fiber-arts-craft-circle-all-ages-61623" target="_blank" rel="noopener">Details →</a></li>
+                <li><span class="when">Sat, Oct 10 · 10 a.m.–3 p.m.</span> Craft Supply Swap at the library. <a href="https://villapark.librarycalendar.com/event/copy-craft-supply-swap-62663" target="_blank" rel="noopener">Details →</a></li>
+              </ul>
+            </div>
+            <div>
+              <h5>Oak Brook</h5>
+              <ul>
+                <li><span class="when">Tue, Oct 6 · 10:30–11 a.m.</span> Violin Storytime for ages 3–5. Registration required. <a href="https://oak-brook.libcal.com/event/17265504" target="_blank" rel="noopener">Details →</a></li>
+                <li><span class="when">Sun, Oct 11</span> Sunday Scavenger Hunt, a puzzle hunt kids solve on their own at the library. <a href="https://oak-brook.libcal.com/event/16270716" target="_blank" rel="noopener">Details →</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>🆓 Free all week</h4>
+          <ul>
+            <li><b>Pirate Monkey Search</b> <span class="town-tag">(Elmhurst)</span>: Find plush pirate monkeys in City Centre shop windows to enter a gift card drawing. <a href="https://elmhurstcitycentre.com/events/pirate-monkey-search" target="_blank" rel="noopener">Details →</a></li>
+            <li><b>Skeleton Squad</b> <span class="town-tag">(Villa Park)</span>: Decorated life-size skeletons line the Prairie Path between Villa and Ardmore avenues. <a href="https://www.invillapark.com/1299/Autumn-Jubilee" target="_blank" rel="noopener">Details →</a></li>
+            <li><b>Graue Mill and Museum</b> <span class="town-tag">(Oak Brook)</span>: Free admission Wednesday through Sunday, 10 a.m.–4 p.m. <a href="https://www.dupageforest.org/places-to-go/centers/graue-mill-and-museum" target="_blank" rel="noopener">Details →</a></li>
+          </ul>
+
+          <h4>🍕 Family dining deals</h4>
+          <ul>
+            <li><b>Kids eat free on weekends</b> at Harry Caray's Italian Steakhouse <span class="town-tag">(Lombard)</span>: one free kids' meal (ages 10 and under) with each adult entrée of $25 or more. <a href="https://www.discoverdupage.com/coupon/kids-eat-free-on-saturdays-%26-sundays!/526/" target="_blank" rel="noopener">Details →</a></li>
+            <li><b>Smack Dessert</b> <span class="town-tag">(Lombard)</span>: ice cream, donuts, and dessert skillets, now open at 1300 S. Main St. <a href="https://patch.com/illinois/glenellyn/smack-dessert-now-open-lombard" target="_blank" rel="noopener">Details →</a></li>
+          </ul>
+
+          <h4>🎃 Save the date</h4>
+          <ul>
+            <li><span class="when">Fri, Oct 16:</span> Haunted Library, 6–8 p.m., Glen Ellyn (family-friendly first floor). <a href="https://gepl.librarycalendar.com/event/haunted-library-39277" target="_blank" rel="noopener">Details →</a></li>
+            <li><span class="when">Sat, Oct 17:</span> BOO~tiful Saturday in downtown Elmhurst, with merchant trick-or-treating and fire trucks to tour. <a href="https://elmhurstcitycentre.com/events/boo-tiful" target="_blank" rel="noopener">Details →</a></li>
+            <li><span class="when">Sun, Oct 18:</span> Spooktacular Lombard, noon–5 p.m. on St. Charles Rd. <a href="https://www.lombardchamber.com/spooktacular" target="_blank" rel="noopener">Details →</a></li>
+            <li><span class="when">Sat, Oct 24:</span> Glen Ellyn Halloween Parade at 9:45 a.m., then trick-or-treating downtown. <a href="https://www.glenellynchamber.com/halloween/" target="_blank" rel="noopener">Details →</a></li>
+          </ul>
+        </div>
+
+        <div class="email-foot">
+          <p><b>Enjoying this?</b> Forward it to a friend. Got a family event or deal to share? Just hit reply.</p>
+          <p>Details come from organizers' public pages and can change, so check the link before you go.</p>
+          <p>Owner's Aide · 422 S Main St #3032, Lombard, IL 60148</p>
+        </div>
+      </article>
+
+      <div class="sample-cta">
+        <a class="btn btn-primary" href="https://dupagefamilyhappenings.beehiiv.com">Get next Wednesday's issue free</a>
+        <p>Plans for Thursday through the following Wednesday, in your inbox every week.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="biz" id="sponsors">
+    <div class="wrap">
+      <div class="biz-card">
+        <div>
+          <span class="eyebrow">For local businesses</span>
+          <h2>Reach local families every Wednesday</h2>
+          <p>If your business serves families in Elmhurst, Lombard, Glen Ellyn, Villa Park, or Oak Brook, put it in front of parents right when they're making weekend plans.</p>
+          <ul class="biz-list">
+            <li>Your logo, a short write-up, and a link</li>
+            <li>Placement near the top of the email</li>
+            <li>Runs in four weekly issues</li>
+          </ul>
+        </div>
+        <div class="price">
+          <div class="eyebrow" style="color:var(--green);margin-bottom:.4rem">Founding sponsor</div>
+          <div class="amt">$150</div>
+          <div class="per">for four weekly issues</div>
+          <a class="btn btn-primary" href="mailto:hello@theownersaide.com?subject=Sponsoring%20DuPage%20Family%20Happenings">Become a sponsor</a>
+          <small>Only a few sponsor spots run in each issue.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Never miss a family weekend again</h2>
+      <p>Join DuPage Family Happenings for free and get the week's best family events in Elmhurst, Lombard, Glen Ellyn, Villa Park, and Oak Brook every Wednesday.</p>
+      <a class="btn btn-white" href="https://dupagefamilyhappenings.beehiiv.com">Subscribe free</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <p><strong>DuPage Family Happenings</strong></p>
+      <p>A free weekly email for families in DuPage County, IL.</p>
+      <p>Published by <a href="https://theownersaide.com">Owner's Aide</a></p>
+    </div>
+    <div>
+      <p>Owner's Aide · 422 S Main St #3032, Lombard, IL 60148</p>
+      <p><a href="mailto:hello@theownersaide.com">hello@theownersaide.com</a></p>
+      <p>© 2026 Owner's Aide</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
