@@ -234,6 +234,10 @@
     .sample-cta .btn{width:100%}
   }
   @media (prefers-reduced-motion: reduce){*{transition:none!important;scroll-behavior:auto!important}}
+  .signup-box{background:#fff;border-radius:16px;overflow:hidden;margin:1.4rem 0 .6rem;max-width:520px;min-height:64px;box-shadow:0 8px 24px rgba(0,0,0,.12)}
+  .signup-box iframe{display:block;width:100%;border:0}
+  html{scroll-behavior:smooth}
+  #signup{scroll-margin-top:90px}
 </style>
 </head>
 <body>
@@ -251,7 +255,7 @@
       </svg>
       <span>DuPage Family Happenings<small>An Owner's Aide publication</small></span>
     </a>
-    <a class="btn btn-white btn-sm" href="https://dupagefamilyhappenings.beehiiv.com">Subscribe free</a>
+    <a class="btn btn-white btn-sm" href="#signup">Subscribe free</a>
   </div>
 </header>
 
@@ -265,8 +269,11 @@
         <ul class="towns" aria-label="Towns covered">
           <li>Elmhurst</li><li>Lombard</li><li>Glen Ellyn</li><li>Villa Park</li><li>Oak Brook</li>
         </ul>
+        <div class="signup-box" id="signup">
+          <script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="ad06452d-5c81-4b0d-8551-8dd1d7e46dac"></script>
+          <noscript><a class="btn btn-primary" href="https://dupagefamilyhappenings.beehiiv.com">Subscribe free</a></noscript>
+        </div>
         <div class="cta-row">
-          <a class="btn btn-white" href="https://dupagefamilyhappenings.beehiiv.com">Subscribe free</a>
           <a class="btn btn-ghost" href="#sample">See a sample issue</a>
         </div>
         <p class="fineprint">Just your email address. It’s free, and you can unsubscribe anytime.</p>
@@ -452,7 +459,7 @@
       </article>
 
       <div class="sample-cta">
-        <a class="btn btn-primary" href="https://dupagefamilyhappenings.beehiiv.com">Get next Wednesday's issue free</a>
+        <a class="btn btn-primary" href="#signup">Get next Wednesday's issue free</a>
         <p>Plans for Thursday through the following Wednesday, in your inbox every week.</p>
       </div>
     </div>
@@ -486,7 +493,7 @@
     <div class="wrap">
       <h2>Never miss a family weekend again</h2>
       <p>Join DuPage Family Happenings for free and get the week's best family events in Elmhurst, Lombard, Glen Ellyn, Villa Park, and Oak Brook every Wednesday.</p>
-      <a class="btn btn-white" href="https://dupagefamilyhappenings.beehiiv.com">Subscribe free</a>
+      <a class="btn btn-white" href="#signup">Subscribe free</a>
     </div>
   </section>
 </main>
@@ -505,5 +512,6 @@
     </div>
   </div>
 </footer>
+<script type="text/javascript" async src="https://subscribe-forms.beehiiv.com/attribution.js"></script>
 </body>
 </html>
